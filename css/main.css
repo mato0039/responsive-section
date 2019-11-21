@@ -27,12 +27,16 @@ body {
 
 .image-flex {
   display: flex;
-  padding:
+  padding: 1rem;
 }
 
 .section-letter img,
 .section-icon img {
   width: 50%;
+}
+
+.section-body {
+  padding: 1rem;
 }
 
 .section-body h2 {
