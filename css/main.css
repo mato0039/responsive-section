@@ -25,18 +25,18 @@ body {
   background-color: #e5c30a;
 }
 
-.image-flex {
+.img-flex {
   display: flex;
-  padding: 1rem;
+  padding: 1rem 1rem 0;
 }
 
 .section-letter img,
 .section-icon img {
-  width: 50%;
+  width: 100%;
 }
 
 .section-body {
-  padding: 1rem;
+  padding: 0 1rem 1rem;
 }
 
 .section-body h2 {
@@ -49,13 +49,48 @@ body {
 
 @media only screen and (min-width: 25em) {
 
+  html {
+    font-size: 100%
+  }
+
 }
 
 @media only screen and (min-width: 38em) {
 
+  html {
+    font-size: 100%;
+    line-height: 1.4rem;
+  }
+
+  .wrapper {
+    display: flex;
+    padding: 1rem;
+  }
+
+  .img-flex {
+    display: inline-block;
+    padding: 0;
+    width: 30%;
+  }
+
+  .section-letter img,
+  .section-icon img {
+    width: 50%;
+  }
+
+  .section-body {
+    padding: 0;
+    order: 2;
+  }
+
 }
 
 @media only screen and (min-width: 60em) {
+
+  html {
+      font-size: 120%;
+      line-height: 1.5;
+    }
 
 }
 
