@@ -28,19 +28,19 @@ section {
 .wrapper {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
+  margin: 0 0 1.4rem;
   max-width: 45em;
 }
 
 .img-flex {
   display: flex;
-  padding: 1rem 1rem 0;
+  padding: 0;
   width: 100%;
 }
 
 .section-letter,
 .section-icon {
-  width: 100%;
+  width: 50%;
 }
 
 .section-body {
@@ -61,26 +61,43 @@ section p {
     font-size: 100%;
   }
 
+  .section-letter {
+
+  }
+
 }
 
 @media only screen and (min-width: 38em) {
 
   html {
     font-size: 110%;
-    line-height: 1.4rem;
+    line-height: 1.4;
   }
 
   .wrapper {
+    align-items: center;
     display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
     padding: 1rem;
+    max-width: 100%;
   }
 
-  .section-letter img,
-  .section-icon img {
-    width: 50%;
+  .img-flex {
+    display: inline-block;
+  }
+
+  .section-letter,
+  .section-icon {
+    max-width: 25%;
+  }
+
+  .section-icon {
+    order: 3;
   }
 
   .section-body {
+    display: inline-block;
     padding: 0;
     order: 2;
   }
@@ -92,6 +109,14 @@ section p {
   html {
     font-size: 120%;
     line-height: 1.5;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
   }
 
 }
