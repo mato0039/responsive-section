@@ -33,9 +33,13 @@ section {
 }
 
 .img-flex {
-  display: flex;
+  display: inline-block;
   padding: 0;
-  width: 100%;
+  width: 50%;
+}
+
+.wrapper img {
+  width: 50%;
 }
 
 .section-letter,
@@ -117,6 +121,10 @@ section p {
 
   html {
     font-size: 130%;
+  }
+
+  .wrapper {
+    max-width: 45em;
   }
 
 }
