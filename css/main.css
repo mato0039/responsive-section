@@ -23,23 +23,22 @@ body {
 
 section {
   background-color: #e5c30a;
+  overflow: hidden;
 }
 
 .wrapper {
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
-  margin: 0 0 1.4rem;
+  justify-content: center;
+  margin: 0;
   max-width: 45em;
 }
 
 .img-flex {
   display: inline-block;
   padding: 0;
-  width: 50%;
-}
-
-.wrapper img {
-  width: 50%;
+  width: 100%;
 }
 
 .section-letter,
@@ -52,7 +51,7 @@ section {
 }
 
 section h2 {
-  margin: 0;
+  margin-bottom: 0;
 }
 
 section p {
@@ -63,10 +62,22 @@ section p {
 
   html {
     font-size: 100%;
+    line-height: 1.3;
   }
 
-  .section-letter {
+  h1,
+  p {
+    margin: 0 0 1.3rem;
+  }
 
+  .section-letter,
+  .section-icon {
+    padding: 0 1rem;
+  }
+
+  .wrapper {
+    margin: 1.3rem;
+    padding: 0;
   }
 
 }
@@ -78,32 +89,24 @@ section p {
     line-height: 1.4;
   }
 
-  .wrapper {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    padding: 1rem;
-    max-width: 100%;
+  h1,
+  p {
+    margin: 0 0 1.3rem;
   }
 
-  .img-flex {
-    display: inline-block;
+
+  .wrapper {
+    margin: 1.4rem;
+    padding: 0;
   }
 
   .section-letter,
   .section-icon {
-    max-width: 25%;
-  }
-
-  .section-icon {
-    order: 3;
+    width: 15%;
   }
 
   .section-body {
-    display: inline-block;
-    padding: 0;
-    order: 2;
+    width: 70%
   }
 
 }
@@ -115,16 +118,22 @@ section p {
     line-height: 1.5;
   }
 
+  h1,
+  p {
+    margin: 0 0 1.5rem;
+  }
+
+  .wrapper {
+    margin: 1.5rem;
+    padding: 0;
+  }
+
 }
 
 @media only screen and (min-width: 90em) {
 
   html {
     font-size: 130%;
-  }
-
-  .wrapper {
-    max-width: 45em;
   }
 
 }
