@@ -31,7 +31,7 @@ section {
   width: 100%;
 }
 
-section div {
+div {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
@@ -44,18 +44,6 @@ section div {
   padding: 1.3rem;
 }
 
-.section-letter {
-  width: 50%;
-}
-
-.section-icon {
-  width: 50%;
-}
-
-.section-body {
-  padding: 0 1rem 1rem;
-}
-
 section h2 {
   margin-bottom: 0;
 }
@@ -63,6 +51,14 @@ section h2 {
 section p {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.section-letter {
+  width: 50%;
+}
+
+.section-icon {
+  width: 50%;
 }
 
 @media only screen and (min-width: 25em) {
